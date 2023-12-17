@@ -54,7 +54,7 @@ export default function Chat() {
           </span>
         </div>
         <div
-          className="relative p-2 mx-7 mt-2 mb-0 bg-white shadow-lg "
+          className="relative p-2 mx-7 mt-2 mb-0 bg-white shadow-lg overflow-y-auto overflow-x-hidden"
           style={{ width: "300 px", height: "77vh", borderRadius: "40px" }}
         >
           <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-zinc-800 rounded-2xl shadow-sm flex items-center">
@@ -62,79 +62,212 @@ export default function Chat() {
               New Chat
             </span>
           </div>
-          <div className="individual">
-            <span className="circle">
-              <ForumOutlinedIcon className="forum-icon" />
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
             </span>
-            <span className="data">
-              "Write a persuasive email to convince potential Customers to try
-              our service "
+            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">"Write a persuasive</span>
             </span>
-            <span className="navigation">
-              <MoreVertOutlinedIcon className="navi" />
-            </span>
-          </div>
-          <div className="individual">
-            <span className="circle">
-              <ForumOutlinedIcon className="forum-icon" />
-            </span>
-            <span className="data">
-              "Write a persuasive email to convince potential Customers to try
-              our service "
-            </span>
-            <span className="navigation">
-              <MoreVertOutlinedIcon className="navi" />
-            </span>
-          </div>
-          <div className="individual">
-            <span className="circle">
-              <ForumOutlinedIcon className="forum-icon" />
-            </span>
-            <span className="data">
-              "Write a persuasive email to convince potential Customers to try
-              our service "
-            </span>
-            <span className="navigation">
-              <MoreVertOutlinedIcon className="navi" />
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
             </span>
           </div>
-          <div className="individual">
-            <span className="circle">
-              <ForumOutlinedIcon className="forum-icon" />
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
             </span>
-            <span className="data">
-              "Write a persuasive email to convince potential Customers to try
-              our service "
+            <span className="block max-w-[178px] ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">
+                "Write a persuasive email to convince potential Customers to try
+                our service "
+              </span>
             </span>
-            <span className="navigation">
-              <MoreVertOutlinedIcon className="navi" />
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
             </span>
           </div>
-          <div className="individual">
-            <span className="circle">
-              <ForumOutlinedIcon className="forum-icon" />
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
             </span>
-            <span className="data">
-              "Write a persuasive email to convince potential Customers to try
-              our service tooooooooooooooooooooooo "
+            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">"Write a persuasive</span>
             </span>
-            <span className="navigation">
-              <MoreVertOutlinedIcon className="navi" />
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
             </span>
           </div>
-          {/* <div className="individual">
-            <span className="circle">
-              <ForumOutlinedIcon className="forum-icon" />
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
             </span>
-            <span className="data">
-              "Write a persuasive email to convince potential Customers to try
-              our
-              serviceyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">"Write a persuasive</span>
             </span>
-            <span className="navigation">
-              <MoreVertOutlinedIcon className="navi" />
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
             </span>
-          </div> */}
+          </div>
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
+            </span>
+            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">"Write a persuasive</span>
+            </span>
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
+            </span>
+          </div>
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
+            </span>
+            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">"Write a persuasive</span>
+            </span>
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
+            </span>
+          </div>
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
+            </span>
+            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <style jsx>
+                {`
+                  /* Custom CSS to truncate to three lines */
+                  .truncate-3-lines {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
+                `}
+              </style>
+              <span className="truncate-3-lines">"Write a persuasive</span>
+            </span>
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
+            </span>
+          </div>
+
+          <style jsx>
+            {`
+              /* Scrollbar Styles */
+              ::-webkit-scrollbar {
+                width: 7px; /* Width of the scrollbar */
+              }
+
+              /* Track styles */
+              ::-webkit-scrollbar-track {
+                border-radius: 15px; /* Rounded corners */
+                margin-right: 10px;
+              }
+
+              /* Handle styles */
+              ::-webkit-scrollbar-thumb {
+                background: #ccc; /* Color of the scrollbar */
+                border-radius: 15px; /* Rounded corners */
+              }
+            `}
+          </style>
         </div>
 
         <div
