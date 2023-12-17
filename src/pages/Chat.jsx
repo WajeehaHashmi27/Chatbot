@@ -12,13 +12,10 @@ export default function Chat() {
       <div className="relative flex h-full max-w-full flex-1 flex-col overflow:hidden bg-green-100">
         chat area
       </div>
-      <div
-        className=" h-screen flex flex-col flex-shrink-0 overflow-x-hidden bg-green-300"
-        style={{ width: "359px" }}
-      >
+      <div className="hidden md:flex flex-col flex-shrink-0 overflow-x-hidden bg-green-300 w-[359px]">
         <div
           className="relative p-2 mt-6 mb-2 max-w-sm mx-auto bg-white rounded-3xl shadow-lg flex items-center"
-          style={{ width: "300px", height: "40px" }}
+          style={{ width: "300px" }}
         >
           <div className="relative flex items-center rounded-full bg-stone-200">
             <span className="pb-1 px-1 text-neutral-900">
@@ -53,10 +50,7 @@ export default function Chat() {
             />
           </span>
         </div>
-        <div
-          className="relative p-2 mx-7 mt-2 mb-0 bg-white shadow-lg overflow-y-auto overflow-x-hidden"
-          style={{ width: "300 px", height: "77vh", borderRadius: "40px" }}
-        >
+        <div className="relative p-2 mx-7 mt-2 mb-0 bg-white shadow-lg overflow-y-auto overflow-x-hidden flex-1 rounded-[40px] w-[300px]">
           <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-zinc-800 rounded-2xl shadow-sm flex items-center">
             <span className="ml-2 text-md font-semibold text-white">
               New Chat
@@ -64,23 +58,9 @@ export default function Chat() {
           </div>
           <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
             <span className="relative flex items-center rounded-full bg-white p-2">
-              <ForumOutlinedIcon
-                className="p-0 text-neutral-900"
-                style={{ fontSize: "18px" }}
-              />
+              <ForumOutlinedIcon className="p-0 text-neutral-900 text-[18px]" />
             </span>
             <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
               <span className="truncate-3-lines">"Write a persuasive</span>
             </span>
 
@@ -96,18 +76,24 @@ export default function Chat() {
               />
             </span>
             <span className="block max-w-[178px] ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
-              <span className="truncate-3-lines">
+              <span className="truncate-2-lines">
+                "Write a persuasive email to convince potential
+              </span>
+            </span>
+
+            <span className="absolute flex items center right-0 mr-2">
+              <MoreVertOutlinedIcon className="text-neutral-800" />
+            </span>
+          </div>
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
+            <span className="relative flex items-center rounded-full bg-white p-2">
+              <ForumOutlinedIcon
+                className="p-0 text-neutral-900"
+                style={{ fontSize: "18px" }}
+              />
+            </span>
+            <span className="block max-w-[178px] ml-2 text-sm overflow-hidden font-normal text-neutral-800">
+              <span className="truncate-2-lines">
                 "Write a persuasive email to convince potential Customers to try
                 our service "
               </span>
@@ -125,18 +111,7 @@ export default function Chat() {
               />
             </span>
             <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
-              <span className="truncate-3-lines">"Write a persuasive</span>
+              <span className="truncate-2-lines">"Write a persuasive</span>
             </span>
 
             <span className="absolute flex items center right-0 mr-2">
@@ -151,96 +126,7 @@ export default function Chat() {
               />
             </span>
             <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
-              <span className="truncate-3-lines">"Write a persuasive</span>
-            </span>
-
-            <span className="absolute flex items center right-0 mr-2">
-              <MoreVertOutlinedIcon className="text-neutral-800" />
-            </span>
-          </div>
-          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
-            <span className="relative flex items-center rounded-full bg-white p-2">
-              <ForumOutlinedIcon
-                className="p-0 text-neutral-900"
-                style={{ fontSize: "18px" }}
-              />
-            </span>
-            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
-              <span className="truncate-3-lines">"Write a persuasive</span>
-            </span>
-
-            <span className="absolute flex items center right-0 mr-2">
-              <MoreVertOutlinedIcon className="text-neutral-800" />
-            </span>
-          </div>
-          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
-            <span className="relative flex items-center rounded-full bg-white p-2">
-              <ForumOutlinedIcon
-                className="p-0 text-neutral-900"
-                style={{ fontSize: "18px" }}
-              />
-            </span>
-            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
-              <span className="truncate-3-lines">"Write a persuasive</span>
-            </span>
-
-            <span className="absolute flex items center right-0 mr-2">
-              <MoreVertOutlinedIcon className="text-neutral-800" />
-            </span>
-          </div>
-          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-emerald-100 rounded-full shadow-sm flex items-center">
-            <span className="relative flex items-center rounded-full bg-white p-2">
-              <ForumOutlinedIcon
-                className="p-0 text-neutral-900"
-                style={{ fontSize: "18px" }}
-              />
-            </span>
-            <span className="block ml-2 text-sm overflow-hidden font-normal text-neutral-800">
-              <style jsx>
-                {`
-                  /* Custom CSS to truncate to three lines */
-                  .truncate-3-lines {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                  }
-                `}
-              </style>
-              <span className="truncate-3-lines">"Write a persuasive</span>
+              <span className="truncate-2-lines">"Write a persuasive</span>
             </span>
 
             <span className="absolute flex items center right-0 mr-2">
@@ -272,8 +158,10 @@ export default function Chat() {
 
         <div
           className="relative p-2 mt-4 mb-2 max-w-sm mx-auto bg-white rounded-3xl shadow-lg flex items-center"
-          style={{ width: "300px", height: "40px" }}
-        ></div>
+          style={{ width: "300px" }}
+        >
+          Logout
+        </div>
       </div>
     </div>
   );
