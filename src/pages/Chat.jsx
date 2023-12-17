@@ -54,9 +54,88 @@ export default function Chat() {
           </span>
         </div>
         <div
-          className="relative p-2 mx-7 mt-2 mb-0 bg-white shadow-lg flex items-center"
+          className="relative p-2 mx-7 mt-2 mb-0 bg-white shadow-lg "
           style={{ width: "300 px", height: "77vh", borderRadius: "40px" }}
-        ></div>
+        >
+          <div className="relative mx-2 p-3 mt-4 mb-2 max-w-sm mx-auto bg-zinc-800 rounded-2xl shadow-sm flex items-center">
+            <span className="ml-2 text-md font-semibold text-white">
+              New Chat
+            </span>
+          </div>
+          <div className="individual">
+            <span className="circle">
+              <ForumOutlinedIcon className="forum-icon" />
+            </span>
+            <span className="data">
+              "Write a persuasive email to convince potential Customers to try
+              our service "
+            </span>
+            <span className="navigation">
+              <MoreVertOutlinedIcon className="navi" />
+            </span>
+          </div>
+          <div className="individual">
+            <span className="circle">
+              <ForumOutlinedIcon className="forum-icon" />
+            </span>
+            <span className="data">
+              "Write a persuasive email to convince potential Customers to try
+              our service "
+            </span>
+            <span className="navigation">
+              <MoreVertOutlinedIcon className="navi" />
+            </span>
+          </div>
+          <div className="individual">
+            <span className="circle">
+              <ForumOutlinedIcon className="forum-icon" />
+            </span>
+            <span className="data">
+              "Write a persuasive email to convince potential Customers to try
+              our service "
+            </span>
+            <span className="navigation">
+              <MoreVertOutlinedIcon className="navi" />
+            </span>
+          </div>
+          <div className="individual">
+            <span className="circle">
+              <ForumOutlinedIcon className="forum-icon" />
+            </span>
+            <span className="data">
+              "Write a persuasive email to convince potential Customers to try
+              our service "
+            </span>
+            <span className="navigation">
+              <MoreVertOutlinedIcon className="navi" />
+            </span>
+          </div>
+          <div className="individual">
+            <span className="circle">
+              <ForumOutlinedIcon className="forum-icon" />
+            </span>
+            <span className="data">
+              "Write a persuasive email to convince potential Customers to try
+              our service tooooooooooooooooooooooo "
+            </span>
+            <span className="navigation">
+              <MoreVertOutlinedIcon className="navi" />
+            </span>
+          </div>
+          {/* <div className="individual">
+            <span className="circle">
+              <ForumOutlinedIcon className="forum-icon" />
+            </span>
+            <span className="data">
+              "Write a persuasive email to convince potential Customers to try
+              our
+              serviceyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+            </span>
+            <span className="navigation">
+              <MoreVertOutlinedIcon className="navi" />
+            </span>
+          </div> */}
+        </div>
 
         <div
           className="relative p-2 mt-4 mb-2 max-w-sm mx-auto bg-white rounded-3xl shadow-lg flex items-center"
